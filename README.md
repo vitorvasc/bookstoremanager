@@ -1,4 +1,4 @@
-##Bookstore API Manager
+## Bookstore API Manager
 
 O objetivo do projeto Bookstore API Manager é disponibilizar uma API para cadastro dos livros de uma livraria através de uma API REST.
 
@@ -37,9 +37,9 @@ O link da documentação no Heroku, implementada também atraves do Swagger, est
 https://bookapi-course.herokuapp.com/swagger-ui.html
 ```
 
-##Endpoints
+## Endpoints
 
-###POST - /api/v1/books
+### POST - /api/v1/books
 Utilizado para inserir livros e seus autores. Exemplo de requisição:
 ```json
 {
@@ -55,7 +55,7 @@ Utilizado para inserir livros e seus autores. Exemplo de requisição:
 }
 ```
 
-###GET - /api/v1/books/{id}
+### GET - /api/v1/books/{id}
 Utilizado para obter dados de um livro de acordo com seu ID. Exemplo de resposta:
 ```json
 {
@@ -73,7 +73,7 @@ Utilizado para obter dados de um livro de acordo com seu ID. Exemplo de resposta
 }
 ```
 
-##Próximos passos
+## Próximos passos
 * Implementação de banco de dados relacional
 * Tratamento de novos erros (Exemplo: mensagem amigável ao tentar cadastrar livros repetidos)
 * Rota para atualizar e deletar um livro
