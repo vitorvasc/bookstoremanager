@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
-import static br.com.vitorvasconcellos.bookstoremanager.utils.BookUtils.*;
+import static br.com.vitorvasconcellos.bookstoremanager.utils.BookUtils.asJsonString;
 import static br.com.vitorvasconcellos.bookstoremanager.utils.BookUtils.createFakeBookDTO;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
