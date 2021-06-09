@@ -2,6 +2,7 @@ package br.com.vitorvasconcellos.bookstoremanager.controller;
 
 import br.com.vitorvasconcellos.bookstoremanager.dto.BookDTO;
 import br.com.vitorvasconcellos.bookstoremanager.dto.MessageResponseDTO;
+import br.com.vitorvasconcellos.bookstoremanager.exception.BookNotFoundException;
 import br.com.vitorvasconcellos.bookstoremanager.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +31,7 @@ public class BookController {
     }
 
     @GetMapping("/{id}")
-    public BookDTO findById(@PathVariable Long id) {
+    public BookDTO findById(@PathVariable Long id) throws BookNotFoundException {
         return bookService.findById(id);
     }
 }
